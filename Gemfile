@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'dotenv-rails'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -42,6 +42,8 @@ group :development, :test do
   gem 'omniauth'
   gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
   gem 'rspec-rails'
+  gem 'omniauth-facebook'
+gem 'dotenv-rails'
 end
 
 group :development do
@@ -63,3 +65,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'bcrypt'
